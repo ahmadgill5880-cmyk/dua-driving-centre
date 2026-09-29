@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ahmadgill5880-cmyk.github.io/dua-driving-centre/sitemap.xml
