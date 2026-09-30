@@ -349,4 +349,20 @@ a[href*="wa.me"]:hover {
         font-size: 14px;
     }
 }
+.whatsapp-button {
+    display: inline-block;
+    background: #25D366;
+    color: white;
+    padding: 14px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+
+.whatsapp-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.2);
+}
 ```
