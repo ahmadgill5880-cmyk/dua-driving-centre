@@ -394,4 +394,24 @@ footer p {
 .whatsapp-float:hover {
     transform: scale(1.08);
 }
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 25px 0;
+    flex-wrap: wrap;
+}
+
+.social-links a {
+    padding: 10px 18px;
+    background: #102653;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.social-links a:hover {
+    transform: translateY(-2px);
+}
 ```
