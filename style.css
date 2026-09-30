@@ -365,4 +365,12 @@ footer p {
     font-size: 17px;
     margin-bottom: 15px;
 }
+.cta .buttons {
+    justify-content: center;
+}
+
+.cta-location {
+    margin-top: 25px;
+    font-weight: bold;
+}
 ```
