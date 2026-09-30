@@ -1,4 +1,9 @@
-```css
+/* ================================
+   DUA DRIVING CENTRE
+   Premium Website CSS
+================================ */
+
+/* RESET */
 * {
     margin: 0;
     padding: 0;
@@ -16,7 +21,9 @@ body {
     line-height: 1.6;
 }
 
-/* MAIN CONTAINER */
+/* ================================
+   CONTAINER
+================================ */
 
 .container {
     width: 90%;
@@ -24,29 +31,36 @@ body {
     margin: auto;
 }
 
-
-/* HEADER */
+/* ================================
+   HEADER
+================================ */
 
 header {
-    background: linear-gradient(135deg, #061a38, #0b4b8a);
+    background: linear-gradient(135deg, #03152f, #0b4f91);
     color: white;
-    padding: 25px 0;
+    padding: 28px 0 22px;
     text-align: center;
     border-bottom: 4px solid #ffd21c;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
 }
 
 header h1 {
-    font-size: 40px;
+    font-size: 42px;
     font-weight: 900;
+    letter-spacing: 1px;
     color: #ffd21c;
     margin-bottom: 5px;
 }
 
 header p {
     font-size: 18px;
-    color: white;
-    margin-bottom: 18px;
+    color: #ffffff;
+    margin-bottom: 20px;
 }
+
+/* ================================
+   NAVIGATION
+================================ */
 
 nav {
     display: flex;
@@ -61,93 +75,126 @@ nav a {
     text-decoration: none;
     font-weight: bold;
     padding: 10px 17px;
-    border-radius: 6px;
-    transition: 0.3s;
+    border-radius: 7px;
+    transition: all 0.3s ease;
 }
 
 nav a:hover {
     background: #ffd21c;
-    color: #061a38;
+    color: #03152f;
+    transform: translateY(-2px);
 }
 
-
-/* HOME */
+/* ================================
+   HOME / HERO
+================================ */
 
 #home {
-    background: linear-gradient(135deg, #061a38, #145a9c);
+    background:
+        linear-gradient(
+            135deg,
+            rgba(3, 21, 47, 0.98),
+            rgba(11, 79, 145, 0.94)
+        );
     color: white;
     text-align: center;
-    padding: 100px 20px;
-    min-height: 500px;
+    padding: 110px 20px;
+    min-height: 540px;
+
     display: flex;
     align-items: center;
 }
 
 #home .container {
-    max-width: 850px;
+    max-width: 900px;
 }
 
 #home h2 {
-    font-size: 52px;
-    line-height: 1.15;
-    margin-bottom: 20px;
+    font-size: 56px;
+    line-height: 1.12;
+    margin-bottom: 22px;
     color: white;
+    font-weight: 900;
+}
+
+#home h2::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 5px;
+    background: #ffd21c;
+    margin: 22px auto 0;
+    border-radius: 10px;
 }
 
 #home p {
     font-size: 19px;
-    margin-bottom: 30px;
-    color: #f4f7fb;
+    margin: 25px auto 32px;
+    color: #f1f5fa;
+    max-width: 780px;
 }
 
-
-/* GENERAL BUTTON */
+/* ================================
+   BUTTON
+================================ */
 
 .button {
     display: inline-block;
     background: #ffd21c;
-    color: #061a38;
-    padding: 14px 28px;
-    border-radius: 7px;
+    color: #03152f;
+    padding: 15px 30px;
+    border-radius: 8px;
     text-decoration: none;
-    font-weight: 800;
-    transition: 0.3s;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    font-weight: 900;
+    font-size: 16px;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+
+    transition: all 0.3s ease;
 }
 
 .button:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 22px rgba(0,0,0,0.22);
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25);
 }
 
-
-/* ALL SECTIONS */
+/* ================================
+   SECTIONS
+================================ */
 
 section {
-    padding: 75px 0;
-}
-
-section:nth-child(even) {
-    background: white;
+    padding: 80px 0;
 }
 
 section h2 {
     text-align: center;
-    color: #061a38;
-    font-size: 36px;
-    margin-bottom: 30px;
+    color: #03152f;
+    font-size: 38px;
+    font-weight: 900;
+    margin-bottom: 35px;
+}
+
+section h2::after {
+    content: "";
+    display: block;
+    width: 65px;
+    height: 4px;
+    background: #ffd21c;
+    margin: 14px auto 0;
+    border-radius: 10px;
 }
 
 section p {
     max-width: 850px;
     margin: 0 auto 18px;
     text-align: center;
-    color: #5b6575;
+    color: #5d6878;
     font-size: 17px;
 }
 
-
-/* ABOUT */
+/* ================================
+   ABOUT
+================================ */
 
 #about {
     background: white;
@@ -157,8 +204,9 @@ section p {
     max-width: 950px;
 }
 
-
-/* TRAINING */
+/* ================================
+   TRAINING
+================================ */
 
 #training {
     background: #f4f7fb;
@@ -168,49 +216,61 @@ section p {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 22px;
+    gap: 24px;
 }
 
 #training h2 {
     width: 100%;
 }
 
+/* ================================
+   TRAINING CARDS
+================================ */
+
 .card {
     background: white;
     width: 31%;
     min-width: 260px;
-    padding: 32px 24px;
-    border-radius: 12px;
+
+    padding: 34px 25px;
+
+    border-radius: 14px;
+
     text-align: center;
+
     border-top: 5px solid #ffd21c;
-    box-shadow: 0 7px 22px rgba(0,0,0,0.08);
-    transition: 0.3s;
+
+    box-shadow: 0 8px 25px rgba(3, 21, 47, 0.08);
+
+    transition: all 0.35s ease;
 }
 
 .card:hover {
-    transform: translateY(-7px);
-    box-shadow: 0 14px 28px rgba(0,0,0,0.13);
+    transform: translateY(-9px);
+    box-shadow: 0 18px 35px rgba(3, 21, 47, 0.15);
 }
 
 .card h3 {
-    color: #061a38;
-    font-size: 21px;
-    margin-bottom: 12px;
+    color: #03152f;
+    font-size: 22px;
+    margin-bottom: 13px;
 }
 
 .card p {
     font-size: 15px;
+    color: #657083;
 }
 
-
-/* WHY DUA */
+/* ================================
+   WHY DUA
+================================ */
 
 #why-dua {
     background: white;
 }
 
 #why-dua ul {
-    max-width: 750px;
+    max-width: 780px;
     margin: auto;
     padding: 0;
     list-style: none;
@@ -218,20 +278,32 @@ section p {
 
 #why-dua li {
     background: #f5f8fc;
-    margin: 12px 0;
-    padding: 16px 20px;
+
+    margin: 14px 0;
+    padding: 17px 22px;
+
     border-left: 5px solid #ffd21c;
-    border-radius: 7px;
-    box-shadow: 0 3px 12px rgba(0,0,0,0.06);
+    border-radius: 8px;
+
+    box-shadow: 0 4px 15px rgba(3, 21, 47, 0.06);
+
     font-weight: 600;
     color: #263248;
+
+    transition: all 0.3s ease;
 }
 
+#why-dua li:hover {
+    transform: translateX(6px);
+    background: #fffdf0;
+}
 
-/* CONTACT */
+/* ================================
+   CONTACT
+================================ */
 
 #contact {
-    background: linear-gradient(135deg, #061a38, #0b4b8a);
+    background: linear-gradient(135deg, #03152f, #0b4f91);
     color: white;
 }
 
@@ -240,7 +312,7 @@ section p {
 }
 
 #contact p {
-    color: white;
+    color: #f4f7fb;
 }
 
 #contact a:not(.button) {
@@ -249,39 +321,70 @@ section p {
     text-decoration: none;
 }
 
+#contact a:not(.button):hover {
+    text-decoration: underline;
+}
 
-/* FOOTER */
+/* ================================
+   WHATSAPP LINK
+   Works if WhatsApp link exists
+================================ */
+
+a[href*="wa.me"] {
+    display: inline-block;
+    background: #25d366;
+    color: white !important;
+
+    padding: 13px 24px;
+    margin-top: 12px;
+
+    border-radius: 8px;
+
+    font-weight: 800;
+    text-decoration: none !important;
+
+    box-shadow: 0 7px 18px rgba(0, 0, 0, 0.18);
+
+    transition: all 0.3s ease;
+}
+
+a[href*="wa.me"]:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+}
+
+/* ================================
+   FOOTER
+================================ */
 
 footer {
-    background: #030d1c;
+    background: #020b18;
     color: white;
     text-align: center;
-    padding: 28px 15px;
+    padding: 30px 15px;
 }
 
 footer p {
     color: #d9e0ea;
-    margin: 5px 0;
+    margin: 6px 0;
 }
 
+/* ================================
+   LINKS
+================================ */
 
-/* WHATSAPP LINK */
-
-a[href*="wa.me"] {
-    transition: 0.3s;
+a {
+    transition: all 0.3s ease;
 }
 
-a[href*="wa.me"]:hover {
-    transform: translateY(-3px);
-}
-
-
-/* MOBILE */
+/* ================================
+   MOBILE
+================================ */
 
 @media (max-width: 800px) {
 
     header h1 {
-        font-size: 31px;
+        font-size: 32px;
     }
 
     header p {
@@ -298,11 +401,12 @@ a[href*="wa.me"]:hover {
     }
 
     #home {
-        padding: 75px 20px;
+        padding: 80px 20px;
+        min-height: 480px;
     }
 
     #home h2 {
-        font-size: 38px;
+        font-size: 40px;
     }
 
     #home p {
@@ -310,29 +414,35 @@ a[href*="wa.me"]:hover {
     }
 
     section {
-        padding: 55px 0;
+        padding: 60px 0;
     }
 
     section h2 {
-        font-size: 29px;
+        font-size: 30px;
     }
 
     .card {
         width: 100%;
-    }
-
-    #why-dua ul {
-        width: 95%;
+        max-width: 500px;
     }
 }
 
-
-/* SMALL PHONES */
+/* ================================
+   SMALL MOBILE
+================================ */
 
 @media (max-width: 480px) {
 
+    header {
+        padding: 22px 0 18px;
+    }
+
     header h1 {
         font-size: 27px;
+    }
+
+    header p {
+        font-size: 14px;
     }
 
     nav a {
@@ -340,29 +450,28 @@ a[href*="wa.me"]:hover {
         padding: 7px 9px;
     }
 
+    #home {
+        padding: 70px 18px;
+    }
+
     #home h2 {
         font-size: 32px;
     }
 
+    #home p {
+        font-size: 15px;
+    }
+
     .button {
-        padding: 12px 21px;
+        padding: 13px 21px;
         font-size: 14px;
     }
-}
-.whatsapp-button {
-    display: inline-block;
-    background: #25D366;
-    color: white;
-    padding: 14px 25px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: bold;
-    margin-top: 15px;
-    transition: 0.3s;
-}
 
-.whatsapp-button:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 18px rgba(0,0,0,0.2);
+    section h2 {
+        font-size: 27px;
+    }
+
+    .card {
+        padding: 28px 20px;
+    }
 }
-```
