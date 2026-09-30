@@ -302,4 +302,45 @@ footer p {
     height: auto;
     display: block;
 }
+.steps {
+    padding: 80px 8%;
+    text-align: center;
+    background: white;
+}
+
+.steps h2 {
+    font-size: 38px;
+    margin-bottom: 45px;
+}
+
+.step-cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.step {
+    width: 280px;
+    padding: 30px 25px;
+    background: #f5f7fb;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+.number {
+    font-size: 32px;
+    font-weight: 900;
+    color: #2458c6;
+    margin-bottom: 15px;
+}
+
+.step h3 {
+    margin-bottom: 12px;
+}
+
+.step p {
+    color: #5d6675;
+    line-height: 1.6;
+}
 ```
