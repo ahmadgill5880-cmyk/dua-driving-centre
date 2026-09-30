@@ -343,4 +343,26 @@ footer p {
     color: #5d6675;
     line-height: 1.6;
 }
+.about {
+    padding: 80px 8%;
+    background: #eef3fa;
+}
+
+.about-content {
+    max-width: 850px;
+    margin: auto;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 38px;
+    margin-bottom: 25px;
+}
+
+.about p:not(.small-title) {
+    color: #5d6675;
+    line-height: 1.8;
+    font-size: 17px;
+    margin-bottom: 15px;
+}
 ```
