@@ -475,3 +475,54 @@ a {
         padding: 28px 20px;
     }
 }
+/* ================================
+   SOCIAL MEDIA BUTTONS
+================================ */
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 22px;
+}
+
+.social {
+    display: inline-block;
+    padding: 11px 18px;
+    border-radius: 8px;
+    color: white !important;
+    text-decoration: none !important;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.social:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
+}
+
+.whatsapp {
+    background: #25D366;
+}
+
+.tiktok {
+    background: #111111;
+}
+
+.instagram {
+    background: #E1306C;
+}
+
+.facebook {
+    background: #1877F2;
+}
+
+@media (max-width: 480px) {
+    .social {
+        width: 100%;
+        max-width: 230px;
+        text-align: center;
+    }
+}
